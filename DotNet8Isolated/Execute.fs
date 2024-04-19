@@ -7,7 +7,7 @@ open Microsoft.AspNetCore.Http
 open Microsoft.AspNetCore.Http.Extensions
 open System.Net
 
-type Execute(logger: ILogger<Execute>, reqHttp: HttpRequest<Execute>) =
+type Execute(logger: ILogger<Execute>, reqHttp: HttpRequest) =
 
     [<Function("Execute")>]
     member _.Run
